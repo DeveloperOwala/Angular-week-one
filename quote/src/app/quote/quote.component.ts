@@ -9,11 +9,11 @@ import { Quotes } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quote:Quotes[] = [
-    new Quotes ('Never stop dreaming. A dream is what it takes to achieve.', 'Montgamery', new Date(2010,4,5)),
-    new Quotes ('Act as if what you do makes a difference. It does.', 'William James', new Date(2006,7,8)),
-    new Quotes ('Success is not final, failure is not fatal: it is the courage to continue that counts.', 'Winston Churchill', new Date(1985,2,1)),
-    new Quotes ('Never bend your head. Always hold it high. Look the world straight in the eye.','Hellen Keller', new Date(2000,1,8)),
-    new Quotes ('What you get by achieving your goals is not as important as what you become by achieving your goals.', 'Zig Ziglar', new Date(2009,9,4)),
+    new Quotes ('It is not the size of the dog in the fight, but the size of the fight in the dog.', 'Archie Griffen', new Date(2002,7,2)),
+    new Quotes ('Nothing lasts forever. Not even your troubles.', 'Arnold H Glasgow', new Date(2014,12,10)),
+    new Quotes ('It took me a long time not to judge myself through someone elses eyes.', 'Sally Field', new Date(1994,9,23)),
+    new Quotes ('Hope never abandons you, you abandon it.','George Weinberg', new Date(2004,12,7)),
+    new Quotes ('The secret is in not giving up, of all the greats they didnt quit. If you quit I guarantee you re gonna fail, but you dont know whats gunna happen if you dont give in.', 'Eric Thomas', new Date(2005,4,9)),
     new Quotes ('Believe you can and you are halfway there.', 'Theodore Roosevelt', new Date(1937,6,2))
 
   ];
