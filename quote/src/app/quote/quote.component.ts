@@ -11,6 +11,22 @@ export class QuoteComponent implements OnInit {
     new Quote('Things fall apart','chinua ichebe',newDate(2009,8,3)),
 
   ];
+
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete this quote by ${this.quote[index].author}?`)
+
+      if (toDelete) {
+        this.quote.splice(index,1)
+      }
+    }
+  }
+  addNewQuote(quote) {
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength+1;
+    quote.isCompleteDate = new Date(quote.CompleteDate)
+    this.quote.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
