@@ -20,7 +20,7 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
-  // Upvotes and Down nvotes functionality
+  // Function for upvotes and downvotes
   upVotes: number = 0;
   downVotes: number = 0;
 

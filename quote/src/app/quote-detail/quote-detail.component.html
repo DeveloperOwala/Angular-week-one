@@ -1,1 +1,21 @@
-<p>quote-detail works!</p>
+<p>
+    <em>Author:</em> <strong> {{ quote.publisher }} </strong> <br>
+    <button class="btn btn-danger" (click)='quoteDelete(true)'>
+      <i class="far fa-trash-alt"></i>
+    </button>
+  
+    &nbsp;
+  
+    <button class="btn btn-primary" (click)="likeButtonClick()">
+        <i class="far fa-thumbs-up"></i>
+      {{upVotes}}
+    </button>
+  
+    &nbsp;
+  
+    <button class="btn btn-primary" (click)="dislikeButtonClick()">
+        <i class="far fa-thumbs-down"></i>
+      {{downVotes}}
+    </button>
+    
+  </p>

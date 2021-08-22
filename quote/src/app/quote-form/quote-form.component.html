@@ -1,1 +1,64 @@
-<p>quote-form works!</p>
+<div class="container-fluid myForm">
+    <h2 class="text-center">Submit quote</h2>
+    <hr>
+    <br>
+    <form (ngSubmit)='submitQuotes()' #quoteForm='ngForm' action="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newQuotes.author" name="author" #author='ngModel' placeholder="Jane Doe" required>
+
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+
+                <p>My author name required</p>
+
+            </div>        
+        </div>
+
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea  id="quote" rows="8" class="form-control" placeholder="Compose your quote here" [(ngModel)]="newQuotes.name" name="name" #name='ngModel' required></textarea>
+
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+
+                <p>Author Quote is required</p>
+
+            </div>
+
+            <!-- Adding the user -->
+
+            <!-- {{newQuotes.name}} -->
+        </div>
+
+        <div class="form-group">
+            <button type="submit"class="btn btn-success">Post</button>            
+        </div>
+    </form> <br>
+
+
+    <div class="text">
+        <p>
+            “It is not the size of the dog in the fight, but the size of the fight in the dog.”
+            <em><strong>– Archie Griffen</strong></em>
+        </p>
+        <br>
+        <p>
+            “Nothing lasts forever. Not even your troubles.”
+            <em><strong>– Arnold H Glasgow</strong></em>        
+        </p>
+        <br>
+        <p>
+            “It took me a long time not to judge myself through someone elses eyes.”
+            <em><strong>– Sally Field</strong></em>
+        </p>
+        <br>
+        <p>
+            “Hope never abandons you, you abandon it.”
+            <em><strong>– George Weinberg</strong></em>        
+        </p>
+        <br>
+        <p class="text-center">
+            Congratulations for scoring angular quotes. <br>
+            All Rights Reserved 2021&copy;
+        </p>
+    </div>
+</div>
