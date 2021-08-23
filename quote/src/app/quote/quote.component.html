@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
    <h1>My quotes</h1>
 <hr>
 <ul>
@@ -10,4 +10,34 @@
 
 </div>
 </ul> 
-</div>
+</div> -->
+<div class="container main-pg">
+  <nav class="navbar navbar-light bg-dark sticky-top">
+    <div class="container-fluid">
+      <h1> <strong class="text-white text-center">My Quotes</strong></h1>
+    </div>
+  </nav>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card dark text-white">
+          <ul>
+            <li *ngFor='let quote of quotes;let i = index'>
+              {{ quote.name }} <br> posted on {{quote.completeDate|date}}     
+              <app-quote-detail *ngIf='quote.showPublisher' [quote]='quote' (isComplete) = 'quoteComplete($event,i)'></app-quote-detail>
+              <br><button (click)='toggleDetails(i)'>Toggle Actions</button> <br><br>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 myform">
+  
+        <div class="card dark text-white">
+          <p>coming soon</p>
+          <!-- <app-quote (addQuotes)="addNewQuote($event)"></app-quote> -->
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
