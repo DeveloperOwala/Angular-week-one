@@ -7,9 +7,9 @@
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" [(ngModel)]="newQuotes.author" name="author" #author='ngModel' placeholder="Jane Doe" required>
 
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
 
-                <p>My author name required</p>
+                <p>Publisher name required</p>
 
             </div>        
         </div>
