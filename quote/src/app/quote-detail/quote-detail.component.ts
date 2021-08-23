@@ -7,33 +7,41 @@ import { Quotes } from '../quote';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-
-  @Input()
-  quote!: Quotes;
-  @Output()
-  publisher!: Quotes;
+  @Input() quote: Quotes;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  constructor() { }
-
-  quoteDelete(complete:boolean){
+  goalComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  // @Input()
+  // quote!: Quotes;
+  // @Output()
+  // publisher!: Quotes;
+  // @Output() isComplete = new EventEmitter<boolean>();
+
+  // constructor() { }
+
+  // quoteDelete(complete:boolean){
+  //   this.isComplete.emit(complete);
+  // }
 
   // Function for upvotes and downvotes
-  upVotes: number = 0;
-  downVotes: number = 0;
+  // upVotes: number = 0;
+  // downVotes: number = 0;
 
-  likeButtonClick(){
-    this.upVotes++;
-  }
+  // likeButtonClick(){
+  //   this.upVotes++;
+  // }
 
-  dislikeButtonClick(){
-    this.downVotes++;
-  }
+  // dislikeButtonClick(){
+  //   this.downVotes++;
+  // }
 
-  ngOnInit(): void {
-  }
 
 }
 
