@@ -10,37 +10,26 @@ export class QuoteDetailComponent implements OnInit {
   @Input() quote: Quotes;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  goalComplete(complete:boolean){
+  quoteComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  // @Input()
-  // quote!: Quotes;
-  // @Output()
-  // publisher!: Quotes;
-  // @Output() isComplete = new EventEmitter<boolean>();
+  //Function for upvotes and downvotes
+  upVotes: number = 0;
+  downVotes: number = 0;
 
-  // constructor() { }
+  likeButtonClick(){
+    this.upVotes++;
+  }
 
-  // quoteDelete(complete:boolean){
-  //   this.isComplete.emit(complete);
-  // }
-
-  // Function for upvotes and downvotes
-  // upVotes: number = 0;
-  // downVotes: number = 0;
-
-  // likeButtonClick(){
-  //   this.upVotes++;
-  // }
-
-  // dislikeButtonClick(){
-  //   this.downVotes++;
-  // }
+  dislikeButtonClick(){
+    this.downVotes++;
+  }
 
 
 }

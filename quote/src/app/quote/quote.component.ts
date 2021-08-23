@@ -21,12 +21,18 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showPublisher = !this.quotes[index].showPublisher;
   }
 
-  completeQuote(isComplete, index){
+  quoteComplete(isComplete, index){
+    // if (isComplete) {
+    //   this.quotes.splice(index,1);
+    // }
     if (isComplete) {
-      this.quotes.splice(index,1);
-    }
+            let toDelete = confirm(`Are you sure you want to delete this quote by ${this.quotes[index].publisher}?`)
+      
+            if (toDelete) {
+              this.quotes.splice(index, 1)
+            }
   }
-
+  }
 //   deleteQuote(isComplete: string, index: number) {
 //     if (isComplete) {
 //       let toDelete = confirm(`Are you sure you want to delete this quote by ${this.quote[index].publisher}?`)
