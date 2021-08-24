@@ -2,13 +2,12 @@
 /* bootrap added */
 
 
-h1,
-h2 {
-  font-family: "PT Serif", serif;
+h1, h2 {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body,
 html {
-  background-color: #323232;
+  background-color: #1d1a1a;
 }
 
