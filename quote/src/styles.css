@@ -1,2 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 /* bootrap added */
+
+
+h1,
+h2 {
+  font-family: "PT Serif", serif;
+}
+
+body,
+html {
+  background-color: #323232;
+}
+

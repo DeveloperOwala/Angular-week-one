@@ -1,13 +1,14 @@
 .h-1 {
-    background-color: #652a18d5;
+    background-color: palevioletred;
 }
 
 .main-pg {
-    background-color: #ffef89;
+    background-color: green;
+    height: fit-content;
 }
 
 .dark {
-    background-color: #323232;
+    background-color: indianred;
 }
 
 /* .col-1 {

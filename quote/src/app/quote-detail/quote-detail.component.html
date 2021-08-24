@@ -1,20 +1,20 @@
 <p>
     <em>Author:</em> <strong> {{ quote.publisher }} </strong> <br>
     <button class="btn btn-danger" (click)='quoteComplete(true)'>
-      <i class="far fa-trash-alt"></i>
+      Delete
     </button>
   
     &nbsp;
   
     <button class="btn btn-primary" (click)="likeButtonClick()">
-        <i class="far fa-thumbs-up"></i>
+      upVotes
       {{upVotes}}
     </button>
   
     &nbsp;
   
-    <button class="btn btn-primary" (click)="dislikeButtonClick()">
-        <i class="far fa-thumbs-down"></i>
+    <button class="btn btn-success" (click)="dislikeButtonClick()">
+      downVotes
       {{downVotes}}
     </button>
     

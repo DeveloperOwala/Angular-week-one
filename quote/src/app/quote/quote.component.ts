@@ -14,8 +14,13 @@ export class QuoteComponent implements OnInit {
     new Quotes(3, 'It took me a long time not to judge myself through someone elses eyes.', 'Sally Field', new Date(1994, 9, 23)),
     new Quotes(4, 'Hope never abandons you, you abandon it.', 'George Weinberg', new Date(2004, 12, 7)),
     new Quotes(5, 'The secret is in not giving up, of all the greats they didnt quit. If you quit I guarantee you re gonna fail, but you dont know whats gunna happen if you dont give in.', 'Eric Thomas', new Date(2005, 4, 9)),
-    new Quotes(6, 'Nothing splendid has ever been achieved except by those who dared believe that something inside of them was superior to circumstance.', 'Bruce Barton', new Date(2012, 8, 12))
-
+    new Quotes(6, 'Nothing splendid has ever been achieved except by those who dared believe that something inside of them was superior to circumstance.', 'Bruce Barton', new Date(2012, 8, 12)),
+    new Quotes(7, 'It is not the size of the dog in the fight, but the size of the fight in the dog.', 'Archie Griffen', new Date(2002, 7, 2)),
+    new Quotes(8, 'Nothing lasts forever. Not even your troubles.', 'Arnold H Glasgow', new Date(2014, 12, 10)),
+    new Quotes(9, 'It took me a long time not to judge myself through someone elses eyes.', 'Sally Field', new Date(1994, 9, 23)),
+    new Quotes(10, 'Hope never abandons you, you abandon it.', 'George Weinberg', new Date(2004, 12, 7)),
+    new Quotes(11, 'The secret is in not giving up, of all the greats they didnt quit. If you quit I guarantee you re gonna fail, but you dont know whats gunna happen if you dont give in.', 'Eric Thomas', new Date(2005, 4, 9)),
+    new Quotes(12, 'Nothing splendid has ever been achieved except by those who dared believe that something inside of them was superior to circumstance.', 'Bruce Barton', new Date(2012, 8, 12))
   ];
   toggleDetails(index){
     this.quotes[index].showPublisher = !this.quotes[index].showPublisher;
