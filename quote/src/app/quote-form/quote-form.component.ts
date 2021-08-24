@@ -14,9 +14,7 @@ export class QuoteFormComponent implements OnInit {
     submitQuotes() {
       this.addQuotes.emit(this.newQuotes);
     }
-    // submitGoal(){
-    //   this.addQuotes.emit(this.newQuotes);
-    //     }
+    
   constructor() { }
 
   ngOnInit(): void {
